@@ -1,0 +1,532 @@
+[
+  {
+    "objectID": "remote_diverged.html",
+    "href": "remote_diverged.html",
+    "title": "원격 발산 상태",
+    "section": "",
+    "text": "같은 브랜치의 로컬 버전과 원격 버전에 서로 다른 커밋이 들어가서 달라진 상태\n원격 브랜치에 다른 사람이 커밋 또는 머지를 했는데 이를 로컬에 반영하지 않은 상태에서 커밋을 해 버려서 발생\n\n\n\n\n\n\n%%{\ninit: {\n   \"gitGraph\": {\n      \"mainBranchName\": \"origin/main\",\n      \"rotateCommitLabel\": false\n   },\n   \"themeVariables\": {\n      \"commitLabelColor\": '#000000',\n      \"commitLabelBackground\": '#ffffff',\n      \"commitLabelFontSize\": '15px'\n   }\n}}%%\ngitGraph\n  commit id:\"c0\"\n  branch \"main\"\n  checkout \"main\"\n  commit id:\"c1\"\n  checkout \"origin/main\"\n  commit id:\"c2\"",
+    "crumbs": [
+      "원격 발산 상태"
+    ]
+  },
+  {
+    "objectID": "remote_diverged.html#원격-발산-상태-remote-diverged",
+    "href": "remote_diverged.html#원격-발산-상태-remote-diverged",
+    "title": "원격 발산 상태",
+    "section": "",
+    "text": "같은 브랜치의 로컬 버전과 원격 버전에 서로 다른 커밋이 들어가서 달라진 상태\n원격 브랜치에 다른 사람이 커밋 또는 머지를 했는데 이를 로컬에 반영하지 않은 상태에서 커밋을 해 버려서 발생\n\n\n\n\n\n\n%%{\ninit: {\n   \"gitGraph\": {\n      \"mainBranchName\": \"origin/main\",\n      \"rotateCommitLabel\": false\n   },\n   \"themeVariables\": {\n      \"commitLabelColor\": '#000000',\n      \"commitLabelBackground\": '#ffffff',\n      \"commitLabelFontSize\": '15px'\n   }\n}}%%\ngitGraph\n  commit id:\"c0\"\n  branch \"main\"\n  checkout \"main\"\n  commit id:\"c1\"\n  checkout \"origin/main\"\n  commit id:\"c2\"",
+    "crumbs": [
+      "원격 발산 상태"
+    ]
+  },
+  {
+    "objectID": "remote_diverged.html#원격-발산-상태의-예방",
+    "href": "remote_diverged.html#원격-발산-상태의-예방",
+    "title": "원격 발산 상태",
+    "section": "원격 발산 상태의 예방",
+    "text": "원격 발산 상태의 예방\n\n로컬 브랜치에 커밋하기 전에 원격 브랜치를 로컬에 반영하는 작업을 하면 발생 확률을 줄일 수 있음",
+    "crumbs": [
+      "원격 발산 상태"
+    ]
+  },
+  {
+    "objectID": "remote_diverged.html#원격-발산-상태의-해결",
+    "href": "remote_diverged.html#원격-발산-상태의-해결",
+    "title": "원격 발산 상태",
+    "section": "원격 발산 상태의 해결",
+    "text": "원격 발산 상태의 해결\n\n해결 방법\n\n로컬 브랜치의 작업을 백업한 후 로컬 브랜치에서 없애고 원격 브랜치 내용을 그대로 반영\n로컬 브랜치에서 원격 브랜치를 머지하여 다시 원격 브랜치에 반영\n로컬 브랜치에서 원격 브랜치를 리베이스하여 다시 원격 브랜치에 반영\n\n재분기\n\n어떤 해결 방법을 사용하더라도 해결 작업을 하는 사이에 원격 브랜치에 새 커밋이 들어오면 다시 해야 함",
+    "crumbs": [
+      "원격 발산 상태"
+    ]
+  },
+  {
+    "objectID": "remote_diverged.html#발산-상태-재발생",
+    "href": "remote_diverged.html#발산-상태-재발생",
+    "title": "원격 발산 상태",
+    "section": "발산 상태 재발생",
+    "text": "발산 상태 재발생\n\n어떤 예방 또는 해결 방법을 사용해도 발산 상태는 재발생할 수 있음\n\n예방 또는 해결 작업을 하는 그 짧은 시간동안 다른 사람이 원격 브랜치에 다시 새 커밋을 하면 다시 발산 상태가 됨\n근본적으로는 개발자간 커뮤니케이션을 통해 해결해야 함",
+    "crumbs": [
+      "원격 발산 상태"
+    ]
+  },
+  {
+    "objectID": "object.html",
+    "href": "object.html",
+    "title": "객체",
+    "section": "",
+    "text": "Pro Git, Git Internels, Git Objects\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Progit/progit.pdf#%5B%7B%22num%22%3A2221%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C0%2C510.57%2Cnull%5D\n\nMastering Git, Ch10 Keeping History Clean, An introduction to Git internals\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Narebski/2024%20-%20Narebski%20-%20Mastering%20Git,%202nd%20Edition.pdf#p263",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#참고-문헌",
+    "href": "object.html#참고-문헌",
+    "title": "객체",
+    "section": "",
+    "text": "Pro Git, Git Internels, Git Objects\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Progit/progit.pdf#%5B%7B%22num%22%3A2221%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C0%2C510.57%2Cnull%5D\n\nMastering Git, Ch10 Keeping History Clean, An introduction to Git internals\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Narebski/2024%20-%20Narebski%20-%20Mastering%20Git,%202nd%20Edition.pdf#p263",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#객체",
+    "href": "object.html#객체",
+    "title": "객체",
+    "section": "객체",
+    "text": "객체\n\ngit의 대부분의 정보는 객체(object) 형태로 저장\ncommit 명령으로 레포지토리에 정식 저장된 정보 뿐 아니라 add 명령으로 스테이지에 저장된 파일도 객체로 저장됨\n\n\n객체로 저장되지 않는 정보\n\n브랜치 정보는 객체가 아닌 참조(ref) 정보로 저장됨",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#해시값",
+    "href": "object.html#해시값",
+    "title": "객체",
+    "section": "해시값",
+    "text": "해시값\n\n모든 객체는 이름(아이디)으로 sha1 해시값 40글자를 가짐\n객체의 유형에 따라 해시 계산 방법이 다름\n\n파일내용을 나타내는 blob 객체의 해시값은 파일의 내용만(파일 이름도 사용하지 않음!) 사용하여 계산하므로 파일 내용이 같으면 해시값도 같음\n디렉토리 내용을 나타내는 blob 객체의 해시값은 해당 디렉토리에 있는 파일 이름과 해시값(또는 서브디렉토리 이름 정보 사용하여 계산하므로 파일 내용이 같으면 해시값도 같음\n커밋을 나타내는 commit 객체의 해시값은 작성자 정보, 작성 시간 정보 등을 통합하여 계산하므로 커밋 파일의 내용이 같아도 해시값이 달라질 수 있음",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#객체-저장-위치",
+    "href": "object.html#객체-저장-위치",
+    "title": "객체",
+    "section": "객체 저장 위치",
+    "text": "객체 저장 위치\n\n객체는 .git/objects 디렉토리 아래에 서브디렉토리로 나뉘어서 파일형태로 저장\n40글자 sha1 해시값 중 첫 2글자를 디렉토리 이름으로 하고 나머지 38글자를 파일이름으로 저장\n추가 디렉토리\n\n.git/objects/info\n.git/objects/pack\n\n\n\n예시\n\n샘플 레포지토리 생성\n$ mkdir test\n$ cd test\n$ git init\nInitialized empty Git repository in test/.git/\n$ echo \"file1 line1\" &gt; file1.txt\n$ echo \"file2 line1\" &gt; file2.txt\n$ mkdir sub\n$ echo \"file3 line1\" &gt; sub/file3.txt\n$ git add .\n$ git commit -m \"test\"\n[main (root-commit) 3854a02] test\n3 files changed, 3 insertions(+)\ncreate mode 100644 file1.txt\ncreate mode 100644 file2.txt\ncreate mode 100644 sub/file3.txt\n객체 목록 출력\n$ find .git/objects -type f\n.git/objects/0b/11cfca50e35a4865e8505f1a108bd23a3f9401\n.git/objects/bb/e651d471cd00fc3add5bdac5c6a41619555f7c\n.git/objects/42/0b1e064cb3f5a3ae63c99e1cc8ef46c8f004c9\n.git/objects/5c/07b4420198fbb25aabbba53aaa908ca0fb9dd5\n.git/objects/e6/782efee2e87f68c0d6d87d8bd2a1031dc21f45\n.git/objects/4a/8d995103b41f561e547ce3b32e1983d424da22",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#객체의-저장-형식",
+    "href": "object.html#객체의-저장-형식",
+    "title": "객체",
+    "section": "객체의 저장 형식",
+    "text": "객체의 저장 형식\n\nzlib으로 압축된 바이너리 파일\n객체를 hex 에디터로 보면 앞부분이 zlib DEFLATE 형식(0x78 0x9C)으로 시작함",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#객체의-종류",
+    "href": "object.html#객체의-종류",
+    "title": "객체",
+    "section": "객체의 종류",
+    "text": "객체의 종류\n\nblob 객체: 한 순간의 하나의 파일의 스냅샷 정보\ntree 객체: 한 순간의 하나의 디렉토리의 파일/서브디렉토리 정보\ncommit 객체: 하나의 커밋 정보\ntag 객체: 태그 정보",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#객체를-보는-명령",
+    "href": "object.html#객체를-보는-명령",
+    "title": "객체",
+    "section": "객체를 보는 명령",
+    "text": "객체를 보는 명령\n\n저장소 전체의 객체 목록을 보는 법\ngit cat-file --batch-check --batch-all-objects --unordered\n객체 하나의 유형을 보는 법\ngit cat-file -t 해시값\n객체 하나의 파싱 정보를 보는 법\ngit cat-file -p 해시값\n객체의 내용 정보를 원 바이트열 그대로 보고 싶을 때는 zlib 압축을 풀 수 있는 도구가 있어야 한다.\n\n예를 들어 “qpdf” 애플리케이션을 설치하면 zlib-flate -uncompress 명령으로 객체 내용을 볼 수 있다.\n단, 이 경우에는 바이너리 바이트열을 그대로 보여주므로 콘솔에서 문자로 잘 표시되지 않을 수 있다.\n\n\n\n예시\n$ git cat-file --batch-check --batch-all-objects --unordered\n0b11cfca50e35a4865e8505f1a108bd23a3f9401 blob 12\n420b1e064cb3f5a3ae63c99e1cc8ef46c8f004c9 commit 171\n4a8d995103b41f561e547ce3b32e1983d424da22 blob 12\n5c07b4420198fbb25aabbba53aaa908ca0fb9dd5 blob 12\nbbe651d471cd00fc3add5bdac5c6a41619555f7c tree 104\ne6782efee2e87f68c0d6d87d8bd2a1031dc21f45 tree 37\n\n$ git cat-file -t 0b11cfca50e35a4865e8505f1a108bd23a3f9401\nblob\n\n$ git cat-file -p 0b11cfca50e35a4865e8505f1a108bd23a3f9401\nfile1 line1\n\n$ zlib-flate -uncompress &lt; \".git/objects/0b/11cfca50e35a4865e8505f1a108bd23a3f9401\"\nblob 12file1 line1",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#blob-객체",
+    "href": "object.html#blob-객체",
+    "title": "객체",
+    "section": "blob 객체",
+    "text": "blob 객체\n\nblob 객체의 내용\n\n파일의 내용(바이트 스트림)만 저장\n커밋이 아닌 스테이징 시점에 생성되고 커밋되면 tree 객체에서 참조하게 됨\n파일명, 모드, 권한, 타임스탬프 등의 메타데이터 포함하지 않음\n파일명과 모드는 blob 객체가 아닌 tree 객체에 저장됨\n\n\n\nblob 객체의 해시값\n\n“blob &lt;바이트길이&gt;\\0&lt;데이터바이트&gt;” 형식의 바이트열을 sha1 계산\n\n\n\n예시\n$ printf \"file1 line1\\n\" | git hash-object -t blob --stdin\n0b11cfca50e35a4865e8505f1a108bd23a3f9401\n$ printf \"blob 12\\0file1 line1\\n\" | sha1sum\n0b11cfca50e35a4865e8505f1a108bd23a3f9401  -\n\n\ndangling blob\n\n파일이 스테이징되어 blob 객체가 생성되었는데 커밋되지 않고 unstage가 되어도 해당 파일의 blob 객체는 남아있음\ntree 객체에서 참조하지 않는 blob 객체를 dangling blob 이라고 함",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#tree-객체",
+    "href": "object.html#tree-객체",
+    "title": "객체",
+    "section": "tree 객체",
+    "text": "tree 객체\n\ntree 객체는 하나의 디렉토리(서브디렉토리 미포함)에 포함된 파일과 서브디렉토리에 대한 해시값 정보\n서브디렉토리가 존재하면 그에 해당하는 tree 객체가 추가적으로 존재\n\n\ntree 객체의 내용\n\ntree 객체의 내용은 엔트리 열로 구성됨\n엔트리(entry)\n\n하나의 파일 또는 서브디렉토리를 대표하는 정보\n하나의 엔트리 내용은 “&lt;mode&gt; &lt;파일명&gt;\\0&lt;해시값&gt;”\n\n엔트리 열\n\n엔트리 정보를 이어붙인 “&lt;entry&gt;&lt;entry&gt;&lt;entry&gt;...” 형식\n\n하나의 tree 객체 내용은 “tree &lt;크기&gt;\\0&lt;엔트리 열&gt;” 형식\n\n\n\ntree 객체의 해시값\n\ntree 객체의 내용에 대해 SHA-1을 계산\n\n\n\n예시\n$ git cat-file -p bbe651d471cd00fc3add5bdac5c6a41619555f7c\n100644 blob 0b11cfca50e35a4865e8505f1a108bd23a3f9401    file1.txt\n100644 blob 4a8d995103b41f561e547ce3b32e1983d424da22    file2.txt\n040000 tree e6782efee2e87f68c0d6d87d8bd2a1031dc21f45    sub\n\n$ git cat-file -p e6782efee2e87f68c0d6d87d8bd2a1031dc21f45\n100644 blob 5c07b4420198fbb25aabbba53aaa908ca0fb9dd5    file3.txt\n\n$ zlib-flate -uncompress &lt; \".git/objects/bb/e651d471cd00fc3add5bdac5c6a41619555f7c\" \ntree 104100644 file1.txt\n                        ��P�ZHe�P_��:?�100644 file2.txtJ��Q�VT|�.��$�\"40000 sub�x.���h���}�ҡ�E%      \n\n콘솔에서 정상 표시되지 않는 바이트열을 보고 싶으면 다음 파이썬 코드를 사용한다.\n\n\n# get_tree_object_content.py\n\nimport zlib\nimport sys\nfrom pathlib import Path\n\n\ndef get_tree_object_content(data: bytes) -&gt; bytes:\n    output = bytearray()\n\n    # 기존 헤더 (\"tree &lt;size&gt;\\x00\") 그대로 복사\n    header_end = data.find(b\"\\x00\")\n    output += data[: header_end + 1]\n    i = header_end + 1\n\n    # 각 엔트리 파싱 및 SHA를 .hex()로 변환\n    while i &lt; len(data):\n        mode_end = data.find(b\" \", i)\n        name_end = data.find(b\"\\x00\", mode_end)\n        mode = data[i:mode_end]\n        name = data[mode_end + 1 : name_end]\n\n        sha_start = name_end + 1\n        sha_end = sha_start + 20\n        sha = data[sha_start:sha_end]\n        sha_hex = sha.hex().encode(\"ascii\")\n\n        # 기존 구조 유지\n        output += b\" \" + mode + b\" \" + name + r\"\\0\".encode() + sha_hex\n\n        i = sha_end\n\n    return bytes(output)\n\n\n# .git/objects/xx/yyyyyy 에서 Git object 읽기\npath = Path(\".git\", \"objects\", sys.argv[1][:2], sys.argv[1][2:])\nwith open(path, \"rb\") as f:\n    compressed = f.read()\n    raw = zlib.decompress(compressed)\n\n    result = get_tree_object_content(raw) + b\"\\n\"\n    sys.stdout.buffer.write(result)\n\n\n$ python get_tree_object_content.py bbe651d471cd00fc3add5bdac5c6a41619555f7c\ntree 104 100644 file1.txt\\00b11cfca50e35a4865e8505f1a108bd23a3f9401 100644 file2.txt\\04a8d995103b41f561e547ce3b32e1983d424da22 40000 sub\\0e6782efee2e87f68c0d6d87d8bd2a1031dc21f45\n\n$ python get_tree_object_content.py e6782efee2e87f68c0d6d87d8bd2a1031dc21f45\ntree 37 100644 file3.txt\\05c07b4420198fbb25aabbba53aaa908ca0fb9dd5\n\n참고로 위 예시 tree 객체의 길이(바이트 수)는\n\n엔트리 1: 6(모드) + 1(공백) + 9(파일명) + 1(\\0) + 20(해시값) = 37\n엔트리 2: 6(모드) + 1(공백) + 9(파일명) + 1(\\0) + 20(해시값) = 37\n엔트리 3: 5(모드) + 1(공백) + 3(디렉토리명) + 1(\\0) + 20(해시값) = 30\n합계: 37 + 37 + 30 = 104\n\n\nheader = b\"tree 104\\0\"\nentry1 = b\"100644 file1.txt\\0\" + bytes.fromhex(\"0b11cfca50e35a4865e8505f1a108bd23a3f9401\")\nentry2 = b\"100644 file2.txt\\0\" + bytes.fromhex(\"4a8d995103b41f561e547ce3b32e1983d424da22\")\nentry3 = b\"40000 sub\\0\" + bytes.fromhex(\"e6782efee2e87f68c0d6d87d8bd2a1031dc21f45\")\n\ntree_object = header + entry1 + entry2 + entry3\nhashlib.sha1(tree_object).hexdigest()\n\n# 결과\n# 'bbe651d471cd00fc3add5bdac5c6a41619555f7c'",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#commit-객체",
+    "href": "object.html#commit-객체",
+    "title": "객체",
+    "section": "commit 객체",
+    "text": "commit 객체",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#tag-객체",
+    "href": "object.html#tag-객체",
+    "title": "객체",
+    "section": "tag 객체",
+    "text": "tag 객체",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "object.html#git-기본-명령의-내부-구조",
+    "href": "object.html#git-기본-명령의-내부-구조",
+    "title": "객체",
+    "section": "git 기본 명령의 내부 구조",
+    "text": "git 기본 명령의 내부 구조\n\nadd, commit 등의 명령으로 파일이 등록되는 과정은 내부적으로 다음 과정을 따른다.\n\n\n\n\n\n\n\n\n\n\n순번\ngit 명령\n내부 동작\n설명\n\n\n\n\n1\ngit add\nblob 객체 생성\ngit hash-object 명령으로 blob 객체 생성\n\n\n2\n-\n인덱스 등록\ngit update-index 명령으로 인덱스 파일에 스테이징 정보 등록\n\n\n3\ngit commit\ntree 객체 생성\ngit write-tree 명령으로 인덱스 파일정보를 이용하여 tree 객체 생성\n\n\n4\n-\ncommit 객체 생성\ngit commit-tree 명령으로 commit 객체 생성\n\n\n5\n-\n브랜치 갱신\ngit update-ref 명령으로 브랜치 정보 갱신",
+    "crumbs": [
+      "객체"
+    ]
+  },
+  {
+    "objectID": "conflict.html",
+    "href": "conflict.html",
+    "title": "충돌",
+    "section": "",
+    "text": "Building Git, Ch. 17 Basic Merging\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Coglan/2021%20-%20Coglan%20-%20Buliding%20Git.pdf",
+    "crumbs": [
+      "충돌"
+    ]
+  },
+  {
+    "objectID": "conflict.html#참고-문헌",
+    "href": "conflict.html#참고-문헌",
+    "title": "충돌",
+    "section": "",
+    "text": "Building Git, Ch. 17 Basic Merging\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Coglan/2021%20-%20Coglan%20-%20Buliding%20Git.pdf",
+    "crumbs": [
+      "충돌"
+    ]
+  },
+  {
+    "objectID": "checkout.html",
+    "href": "checkout.html",
+    "title": "체크아웃",
+    "section": "",
+    "text": "커밋을 계속하여 과거 커밋이 존재하는 경우, 필요에 따라 과거의 커밋 상태로 되돌아 가는 것이 가능하다\n특정 커밋 시점으로 이동하는 것을 체크아웃이라고 한다.",
+    "crumbs": [
+      "체크아웃"
+    ]
+  },
+  {
+    "objectID": "checkout.html#체크아웃",
+    "href": "checkout.html#체크아웃",
+    "title": "체크아웃",
+    "section": "",
+    "text": "커밋을 계속하여 과거 커밋이 존재하는 경우, 필요에 따라 과거의 커밋 상태로 되돌아 가는 것이 가능하다\n특정 커밋 시점으로 이동하는 것을 체크아웃이라고 한다.",
+    "crumbs": [
+      "체크아웃"
+    ]
+  },
+  {
+    "objectID": "checkout.html#체크아웃-명령",
+    "href": "checkout.html#체크아웃-명령",
+    "title": "체크아웃",
+    "section": "체크아웃 명령",
+    "text": "체크아웃 명령\n\n과거 커밋으로 체크아웃\ngit checkout &lt;과거 커밋의 해시값&gt;\n특정 브랜치의 최신 커밋으로 체크아웃\ngit checkout &lt;브랜치 이름&gt;",
+    "crumbs": [
+      "체크아웃"
+    ]
+  },
+  {
+    "objectID": "checkout.html#헤드",
+    "href": "checkout.html#헤드",
+    "title": "체크아웃",
+    "section": "헤드",
+    "text": "헤드\n\n헤드(HEAD) 정보는 사용자가 현재 어떤 커밋에 체크아웃되어 있는지를 알려주시는 정보다.\n.git/HEAD 파일로 저장되어 관리된다.",
+    "crumbs": [
+      "체크아웃"
+    ]
+  },
+  {
+    "objectID": "checkout.html#attached-상태와-detached-상태",
+    "href": "checkout.html#attached-상태와-detached-상태",
+    "title": "체크아웃",
+    "section": "attached 상태와 detached 상태",
+    "text": "attached 상태와 detached 상태\n\n\n\n\n\n\n\n\n헤드 상태\n설명\nHEAD 파일의 내용\n\n\n\n\nattached 상태\n헤드가 현재 브랜치의 가장 말단(최신) 커밋을 가리키고 있는 상태\nref: refs/heads/&lt;현재 브랜치 이름&gt;\n\n\ndetached 상태\n헤드가 브랜치의 과거 시점 커밋을 커밋을 가리키고 있는 상태\n가리키는 커밋의 해시값\n\n\n\n\n!rm -rf test_checkout_01\n!git init test_checkout_01\n\nInitialized empty Git repository in /test_checkout_01/.git/\n\n!echo \"line 1\" &gt;&gt; file.txt\n!git add .\n!git commit -m c1\n\n[main (root-commit) e9cf0e3] c1\n 1 file changed, 1 insertion(+)\n create mode 100644 file.txt\n\n\n\n!git log --oneline\n\n\ne9cf0e3 (HEAD -&gt; main) c1\n\n\n\n\n\n!cat .git/HEAD\n\nref: refs/heads/main\n\n\n\n!cat .git/refs/heads/main\n\ne9cf0e3511301e7bb1150af8d64297cb14f42fc1\n\n\n\n!echo \"line 2\" &gt;&gt; file.txt\n!git commit -am c2\n\n[main 94054da] c2\n 1 file changed, 1 insertion(+)\n\n\n\n!git log --oneline\n\n\n94054da (HEAD -&gt; main) c2\n\ne9cf0e3 c1\n\n\n\n\n\n!cat .git/HEAD\n\nref: refs/heads/main\n\n\n\n!cat .git/refs/heads/main\n\n94054da7589066ffd508cf497e7462b4fddeb52d",
+    "crumbs": [
+      "체크아웃"
+    ]
+  },
+  {
+    "objectID": "checkout.html#체크아웃의-영향",
+    "href": "checkout.html#체크아웃의-영향",
+    "title": "체크아웃",
+    "section": "체크아웃의 영향",
+    "text": "체크아웃의 영향\n\n체크아웃을 하면\n\n헤드 정보가 해당 커밋을 가리키도록 변경된다.\nrestore 명령을 수행하면 헤드가 가리키는 커밋 정보를 사용한다.\nlog 명령을 수행하면 해당 커밋까지만 출력된다.\n워크트리와 스테이지는 바뀌지 않는다.",
+    "crumbs": [
+      "체크아웃"
+    ]
+  },
+  {
+    "objectID": "basic.html",
+    "href": "basic.html",
+    "title": "기본 동작",
+    "section": "",
+    "text": "git에는 파일의 “위치”라는 개념이 존재함\n\n\n\n\n\n\n\n\n\n이름\n의미\n실제 위치\n\n\n\n\n워크트리(worktree)\n일반적인 디렉토리\n체크아웃 디렉토리\n\n\n스테이지(stage) 또는 스테이징 영역(staging area)\n레포지토리에 들어가기전의 임시 위치\n.git 디렉토리의 objects 서브디렉토리와 .git 디렉토리의 index 파일\n\n\n레포지토리(repository) 또는 인덱스(index)\n버전 기록이 저장되는 위치\n.git 디렉토리의 objects 서브디렉토리",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#파일의-위치",
+    "href": "basic.html#파일의-위치",
+    "title": "기본 동작",
+    "section": "",
+    "text": "git에는 파일의 “위치”라는 개념이 존재함\n\n\n\n\n\n\n\n\n\n이름\n의미\n실제 위치\n\n\n\n\n워크트리(worktree)\n일반적인 디렉토리\n체크아웃 디렉토리\n\n\n스테이지(stage) 또는 스테이징 영역(staging area)\n레포지토리에 들어가기전의 임시 위치\n.git 디렉토리의 objects 서브디렉토리와 .git 디렉토리의 index 파일\n\n\n레포지토리(repository) 또는 인덱스(index)\n버전 기록이 저장되는 위치\n.git 디렉토리의 objects 서브디렉토리",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#기본-동작",
+    "href": "basic.html#기본-동작",
+    "title": "기본 동작",
+    "section": "기본 동작",
+    "text": "기본 동작\n\ngit의 기본 동작은 파일의 위치를 조작하는 add 동작과 commit 동작이 있음\n\n\n\n\n동작\n설명\n\n\n\n\nadd\n워크트리의 파일을 스테이지로 복사\n\n\ncommit\n스테이지의 파일을 레포지토리로 이동",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#파일의-상태",
+    "href": "basic.html#파일의-상태",
+    "title": "기본 동작",
+    "section": "파일의 상태",
+    "text": "파일의 상태\n\n\n\n\n\n\n\n\n위치\n상태\n설명\n\n\n\n\n워크트리\nuntracked\n레포지토리에 기록되지 않거나 스테이지에 올라가지 않은 파일\n\n\n-\nclean\n레포지토리에 기록된 파일로 레포지토리와 파일 내용이 같은 상태\n\n\n-\nmodified\n레포지토리에 기록된 파일로 레포지토리와 파일 내용이 다른 상태\n\n\n-\ndeleted\n레포지토리에 기록된 파일인데 삭제된 상태\n\n\n-\nrenamed\n레포지토리에 기록된 파일인데 이름이 바뀐 상태\n\n\n스테이지\nnew\n처음으로 기록되어 스테이지에 들어온 상태\n\n\n-\nmodified\n예전에 기록된 파일인데 변경되어 스테이지에 들어온 상태\n\n\n-\ndeleted\n예전에 기록된 파일인데 삭제되어 스테이지에 들어온 상태\n\n\n-\nrenamed\n예전에 기록된 파일인데 변경되어 이름이 바뀌어 스테이지에 들어온 상태\n\n\n레포지토리\ncommited\n레포지토리에 정식 기록된 상태",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#status-명령",
+    "href": "basic.html#status-명령",
+    "title": "기본 동작",
+    "section": "status 명령",
+    "text": "status 명령\n\nstatus 명령을 사용하면 파일의 위치 및 상태를 볼 수 있음",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#행위",
+    "href": "basic.html#행위",
+    "title": "기본 동작",
+    "section": "행위",
+    "text": "행위\n\n\n\n\n\n\n\n\n이름\n내용\n설명\n\n\n\n\n스테이징(staging)\n워크트리의 파일을 스테이지로 복사\n스테이지에 워트크리 파일의 복사본이 생기고 워크트리의 파일은 그대로 유지\n\n\n커밋(commit)\n스테이지의 파일을 레포지토리로 이동\n레포지토리에 스테이지 파일의 복사본이 생기고 스테이지의 파일은 없어짐\n\n\n스테이징 취소(unstaging)\n스테이지의 파일을 없앰\n스테이지에 레포지토리 파일을 복사하면서 스테이지 파일이 없어지고 워크트리는 그대로 유지\n\n\n워크트리 원복(restore)\n워크트리의 파일을 레포지토리의 파일로 원복\n워크트리에 레포지토리 파일을 복사하면서 워크트리의 파일의 변화가 없어짐",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#add-commit-명령",
+    "href": "basic.html#add-commit-명령",
+    "title": "기본 동작",
+    "section": "add, commit 명령",
+    "text": "add, commit 명령\n\nadd, commit 명령을 이용하면 스테이지 또는 레포지토리에 파일을 생성할 수 있음\nadd 명령은 워크트리의 파일을 스테이지로 복사하고 워크트리의 파일은 그대로 유지 (워크트리 -&gt; 스테이지)\ncommit 명령은 스테이지의 파일을 레포지토리로 복사하고 스테이지의 파일을 삭제 (스테이지 -&gt; 레포지토리)\n\n\n\n\n\n\n\n\n\n\n\n\n행위\n워크트리\n스테이지\n레포지토리\n명령\n설명\n\n\n\n\n스테이징\n(1) 워크트리 파일 내용을 이용하여\n(2) 스테이지 파일 추가(갱신)\n-\ngit add\n스테이지에 워크트리 파일 추가(갱신)\n\n\n커밋\n-\n(1) 스테이지 파일 내용을 이용하여\n(2) 레포 파일 추가(갱신)\ngit commit\n레포에 스테이지 파일 추가(갱신)\n\n\n\n\nadd 명령과 commit 명령이 분리된 이유\n\ncommit 명령에 파일 또는 디렉토리 경로를 붙여서 바로 레포지토리로 넣으면 스테이지 단계가 필요하지 않다.\n그러나 이렇게 명령의 인수로 사용하는 경우 오타나 실수로 잘못된 파일을 레포지토리에 넣거나 넣어야 할 파일을 누락할 가능성이 있다.\n한 번 레포지토리에 들어가면 이후 두번째 커밋으로 해당 파일으르 삭제하더라도 기록이 남는다.\n따라서 add 명령으로 commit 명령의 인수가 될 파일 목록을 편집(추가 또는 수정, 삭제)할 기회를 제공한다.\n\n\n\n추가적인 사용법\n\ncommit 파일_또는_디렉토리_경로 형식으로 파일이나 디렉토리의 경로를 지정하면 스테이지의 파일 전체 목록을 무시하고 해당 파일만 레포지토리로 복사함 (일단 add 명령으로 스테이지에 존재하고 있어야 하며 스테이지의 다른 파일들은 스테이지에 그대로 남아 있게 됨)\ncommit -a 파일_또는_디렉토리_경로 형식으로 -a 옵션을 사용하면 add 단계를 자체적으로 실행하므로 별도의 git add 없이 바로 스테이지를 거쳐 레포지토리에 커밋됨 (커밋 후에는 스테이지에서 삭제됨)\n\n\n\n\n\n\nflowchart TB\n  subgraph 워크트리\n    start([\" \"])\n    untracked\n    clean\n    modified\n    renamed\n    deleted\n  end\n\n  subgraph 스테이지\n    new_in_stage[\"new\"]\n    modified_in_stage[\"modified\"]\n    renamed_in_stage[\"renamed\"]\n    deleted_in_stage[\"deleted\"]\n  end\n\n  subgraph 레포지토리\n    committed\n\n  end\n\n  start -- \"파일 생성\" --&gt; untracked -- \"git add\" --&gt; new_in_stage -- \"git commit\" --&gt; committed\n  untracked -- \"git commit 까지 완료하면\" --&gt; clean\n  clean -- \"파일 수정\" --&gt; modified -- \"git add\" --&gt; modified_in_stage -- \"git commit\" --&gt; committed\n  clean -- \"파일 이름변경\" --&gt; renamed -- \"git add\" --&gt; renamed_in_stage -- \"git commit\" --&gt; committed\n  clean -- \"파일 삭제\" --&gt; deleted -- \"git add\" --&gt; deleted_in_stage -- \"git commit\" --&gt; committed",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "basic.html#restore-명령",
+    "href": "basic.html#restore-명령",
+    "title": "기본 동작",
+    "section": "restore 명령",
+    "text": "restore 명령\n\nrestore 명령을 이용하면 스테이지 또는 레포지토리에 파일을 원복할 수 있음\nrestore --staged 명령은 레포지토리의 파일을 스테이지로 복사함으로써 스테이지의 파일을 삭제하고 워크트리의 파일은 그대로 유지 (git add 명령의 취소)\n인수가 없는 restore 명령은 레포지토리의 파일을 워크트리로 복사함으로써 워크트리의 파일을 원복시키고 스테이지의 파일은 그대로 유지 (파일 편집 취소)\n만약 워크트리도 원복하고 스테이지에 add된 파일도 없애려면 restore --staged 명령과 restore 명령을 각각 실행해야 하며 한번에 두 가지 작업을 할 수는 없음\n이미 레포지토리에 commit된 파일을 없애는 것은 불가능 (git rm 명령으로 추가적인 삭제 commit을 하는 수 밖에 없음)\n\n\n\n\n\n\n\n\n\n\n\n\n행위\n워크트리\n스테이지\n레포지토리\n명령\n설명\n\n\n\n\n스테이징 취소\n-\n(2) 스테이지 파일 추가(갱신)\n(1) 레포 파일 내용을 이용하여\ngit restore --staged\n스테이지 파일이 있으면 스테이지 파일 삭제, 없으면 아무 일도 일어나지 않는다. 즉, 커밋될 예정인 파일 목록에서 파일을 없앤다\n\n\n워크트리 원복\n(2) 워크트리 파일 갱신\n-\n(1) 레포 파일 내용을 이용하여\ngit restore\n워크트리의 변경된 파일을 마지막 커밋된 상태로 되돌린다.\n\n\n\n\n\n\n\n\nflowchart BT\n  subgraph 워크트리\n    untracked\n    clean\n    modified\n    renamed\n    deleted\n  end\n\n  subgraph 스테이지\n    new_in_stage[\"new\"]\n    modified_in_stage[\"modified\"]\n    renamed_in_stage[\"renamed\"]\n    deleted_in_stage[\"deleted\"]\n  end\n\n\n  modified -- \"git restore\" --&gt; clean\n  renamed -- \"git restore\" --&gt; clean\n  deleted -- \"git restore\" --&gt; clean\n  new_in_stage -- \"git restore --staged\" --&gt; untracked\n  modified_in_stage -- \"git restore --staged\" --&gt; modified\n  renamed_in_stage -- \"git restore --staged\" --&gt; renamed\n  deleted_in_stage -- \"git restore --staged\" --&gt; deleted\n\n    \n\n\n\n\n\n\n\n스테이징\n$ touch file.txt # 파일을 새로 생성\n$ git status    # 현재 상태 조회\nOn branch main\n\nNo commits yet\n\nUntracked files:  --&gt; 아직 레포지토리에 기록\n  (use \"git add &lt;file&gt;...\" to include in what will be committed)\n        file.txt\n\nnothing added to commit but untracked files present (use \"git add\" to track)\n$ git add file.txt \n$ git status\nOn branch main\n\nNo commits yet\n\nChanges to be committed:\n  (use \"git rm --cached &lt;file&gt;...\" to unstage)\n        new file:   file.txt\n\n\n커밋\n$ git commit -m \"add file.txt\"\n[main (root-commit) 0604058] add file.txt\n 1 file changed, 0 insertions(+), 0 deletions(-)\n create mode 100644 file.txt\n$ git log\ncommit 0604058e2e84c04ce1a02e9b52408e58ec68b578 (HEAD -&gt; main)\nAuthor: joelkim &lt;kim.dohhyoung@gmail.com&gt;\nDate:   Sun Jul 27 11:52:14 2025 +0900\n\n    add file.txt\n\n\n스테이징 취소\n$ echo \"line 1\" &gt;&gt; file.txt    \n$ git status\nOn branch main\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   file.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n$ git add file.txt\n$ git status\nOn branch main\nChanges to be committed:\n  (use \"git restore --staged &lt;file&gt;...\" to unstage)\n        modified:   file.txt\n\n$ git restore --staged file.txt \n$ git status\nOn branch main\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   file.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n\n\n워크트리 원복\n$ echo \"line 1\" &gt;&gt; file.txt\n$ git status\nOn branch main\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   file.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n$ git diff\ndiff --git a/file.txt b/file.txt\nindex e69de29..89b24ec 100644\n--- a/file.txt\n+++ b/file.txt\n@@ -0,0 +1 @@\n+line 1\n$ git restore file.txt \n$ git status\nOn branch main\nnothing to commit, working tree clean\n\n\n복잡한 경우\n\n파일을 변경후 스테이징하고, 다시 워크트리에서 변경한 상태\n워크트리와 스테이지와 레포지토리에 있는 파일이 모두 다름\n\n$ echo \"line 1\" &gt;&gt; file.txt\n$ git add file.txt \n$ echo \"line 2\" &gt;&gt; file.txt\n$ git status\nOn branch main\nChanges to be committed:\n  (use \"git restore --staged &lt;file&gt;...\" to unstage)\n        modified:   file.txt\n\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   file.txt\n\n$ git show HEAD:file.txt\n$ git show :file.txt\nline 1\n$ cat file.txt \nline 1\nline 2\n\n만약 이 상태에서 언스테이징만 하면, 스테이지의 파일은 없어지지만, 워크트리는 그대로 유지\n\n$ git restore --staged file.txt \n$ git status\nOn branch main\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   file.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n$ cat file.txt\nline 1\nline 2\n\n만약 동일한 상태에서 언스테이징하지 않고 워크트리 원복만 하면 스테이징된 파일은 그대로고 워크트리의 변동사항만 사라짐\n\n$ git restore file.txt  # 워크트리까지 원복\n$ git status\nOn branch main\nnothing to commit, working tree clean\n$ echo \"line 1\" &gt;&gt; file.txt  # 같은 상태로 만들기 시작\n$ git add file.txt \n$ echo \"line 2\" &gt;&gt; file.txt\n$ git status # 같은 상태임\nOn branch main\nChanges to be committed:\n  (use \"git restore --staged &lt;file&gt;...\" to unstage)\n        modified:   file.txt\n\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   file.txt\n\n$ git show HEAD:file.txt\n$ git show :file.txt\nline 1\n$ cat file.txt\nline 1\nline 2\n$ git restore file.txt\n$ git status          \nOn branch main\nChanges to be committed:\n  (use \"git restore --staged &lt;file&gt;...\" to unstage)\n        modified:   file.txt\n\n$ git show :file.txt  \nline 1\n$ cat file.txt      \nline 1",
+    "crumbs": [
+      "기본 동작"
+    ]
+  },
+  {
+    "objectID": "branch.html",
+    "href": "branch.html",
+    "title": "브랜치",
+    "section": "",
+    "text": "Building Git, Ch. 13 Branching Out\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Coglan/2021%20-%20Coglan%20-%20Buliding%20Git.pdf#%5B%7B%22num%22%3A1460%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C72%2C769.889%2Cnull%5D",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "branch.html#참고-문헌",
+    "href": "branch.html#참고-문헌",
+    "title": "브랜치",
+    "section": "",
+    "text": "Building Git, Ch. 13 Branching Out\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Coglan/2021%20-%20Coglan%20-%20Buliding%20Git.pdf#%5B%7B%22num%22%3A1460%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C72%2C769.889%2Cnull%5D",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "branch.html#브랜치",
+    "href": "branch.html#브랜치",
+    "title": "브랜치",
+    "section": "브랜치",
+    "text": "브랜치\n\ngit에서는 하나의 부모 커밋 아래에 복수의 자식 커밋을 만들 수 있다. (분기=브랜치)\n반대의 경우도 존재한다. 하나의 자식 커밋의 두 개의 부모 커밋을 가질 수 있다. (병합=머지)\n커밋의 연결관계가 선형이 아닌 그래프(graph) 구조가 된다.\n\n\n\n\n\n\ngitGraph\n  commit\n  commit\n  branch b1\n  commit\n  checkout main\n  commit\n  merge b1\n  checkout b1\n  branch b2\n  commit\n  checkout b1\n  commit\n  checkout main\n  commit\n\n\n\n\n\n\n\n브랜치(branch)는 커밋 그래프의 가장 “말단 커밋”(leaf commit)으로부터 과거로 올라가면서 이어지는 하위 그래프(subgraph)를 말한다.\n“말단 커밋”의 수만큼 브랜치가 존재한다.",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "branch.html#브랜치-정보의-저장",
+    "href": "branch.html#브랜치-정보의-저장",
+    "title": "브랜치",
+    "section": "브랜치 정보의 저장",
+    "text": "브랜치 정보의 저장\n\n브랜치를 생성하면\n\n해당 브랜치 정보는 .git/refs/heads/ 디렉토리 아래에 브랜치 이름과 같은 이름의 파일로 저장된다.\n\n하나의 브랜치 정보는 하나의 브랜치 정보 파일로 저장된다.\n브랜치 정보 파일의 내용은 해당 브랜치의 마지막(최신) 커밋을 가리키는 해시값이다.",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "branch.html#디폴트-브랜치",
+    "href": "branch.html#디폴트-브랜치",
+    "title": "브랜치",
+    "section": "디폴트 브랜치",
+    "text": "디폴트 브랜치\n\n레포지토리 생성 직후에는 브랜치가 존재하지 않는다.\n최초로 하나의 커밋을 만들면 미리 정해진 이름으로 최초 커밋을 가리키는 브랜치가 생성된다. 이를 디폴트 브랜치라고 한다.\ngit 자체의 디폴트 브랜치 이름은 master 이다.\n여기에서는 디폴트 브랜치 이름으로 main을 사용한다.\n\n\n디폴트 브랜치 이름 변경\n\n레포지토리 생성전에 init.defaultBranch 설정으로 디폴트 브랜치 이름을 미리 변경할 수 있다.\ngit config init.defaultBranch \"&lt;디폴트 브랜치 이름&gt;\"\n레포지토리 생성시에 --initial-branch 인수로 디폴트 브랜치 이름을 지정 가능\ngit init --initial-branch=\"&lt;최초 브랜치 이름&gt;\"\n\n일단 레포지토리가 생성되면 최초 커밋이 생성될 때 같이 생성되는 최초 브랜치 이름은 변경할 수 없다.\n일단 브랜치 생성 후에 이름을 바꾸는 것은 가능\n\n\n# 레포지토리 생성\n$ git init test_branch_01 \nInitialized empty Git repository in /Users/joelkim/Work/personal/book_git/temp/test_branch_01/.git/\n$ cd test_branch_01 \n$ ll .git/refs/heads \ntotal 0\n\n# 최초 커밋\n$ touch file.txt\n$ git add .\n$ git commit -m c1\n[main (root-commit) c441fbf] c1\n 1 file changed, 0 insertions(+), 0 deletions(-)\n create mode 100644 file.txt\n\n# 브랜치 정보 생성 확인\n$ ls -al .git/refs/heads\ntotal 8\ndrwxr-xr-x@ 3 joelkim  staff   96 Jul 31 12:55 .\ndrwxr-xr-x@ 4 joelkim  staff  128 Jul 31 12:54 ..\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 12:55 main\n$ cat .git/refs/heads/main \nc441fbf6fd1b6c67ee381f95ebb6fe8e8c7691fa",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "branch.html#브랜치-명령",
+    "href": "branch.html#브랜치-명령",
+    "title": "브랜치",
+    "section": "브랜치 명령",
+    "text": "브랜치 명령\n\n\n\n\n\n\n\n\n목적\n명령\n설명\n\n\n\n\n브랜치 목록 조회\ngit branch\n현재 브랜치 앞에 * 표시\n\n\n신규 브랜치 생성\ngit branch &lt;생성할 브랜치 이름&gt;\n-\n\n\n브랜치 이동\ngit switch &lt;이동할 브랜치 이름&gt;\n버전 2.23 이후\n\n\n브랜치 이동\ngit checkout &lt;이동할 브랜치 이름&gt;\n버전 2.23 전\n\n\n신규 브랜치 생성하며 이동\ngit switch -c &lt;생성하고 이동할 브랜치 이름&gt;\n버전 2.23 이후\n\n\n신규 브랜치 생성하며 이동\ngit checkout -b &lt;생성하고 이동할 브랜치 이름&gt;\n버전 2.23 전\n\n\n기존 브랜치 이름 변경\ngit branch -m &lt;기존 브랜치 이름&gt; &lt;변경 후 브랜치 이름&gt;\n변경 후 브랜치 이름과 같은 브랜치가 존재하면 실패\n\n\n기존 브랜치 이름 강제 변경\ngit branch -M &lt;기존 브랜치 이름&gt; &lt;변경 후 브랜치 이름&gt;\n변경 후 브랜치 이름과 같은 브랜치가 존재해도 덮어씀\n\n\n브랜치 삭제\ngit branch -d &lt;기존 브랜치 이름&gt;\n현재 브랜치가 아니고 삭제되지 않는 브랜치에 병햡되어 있어야 삭제 가능\n\n\n브랜치 강제 삭제\ngit branch -D &lt;기존 브랜치 이름&gt;\n무조건 삭제",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "branch.html#브랜치-생성",
+    "href": "branch.html#브랜치-생성",
+    "title": "브랜치",
+    "section": "브랜치 생성",
+    "text": "브랜치 생성\n\n디폴트 브랜치는 레포지토리의 첫 커밋을 생성하는 순간 자동 생성된다.\n이후의 브랜치는 git switch -c &lt;브랜치이름&gt; 명령으로 생성한다.\n\n\n# 브랜치 목록 조회\n$ git branch\n* main\n\n# 브랜치 생성\n$ git branch b1\n$ git branch\n  b1\n* main\n$ ls -al .git/refs/heads \ntotal 16\ndrwxr-xr-x@ 4 joelkim  staff  128 Jul 31 13:07 .\ndrwxr-xr-x@ 4 joelkim  staff  128 Jul 31 12:54 ..\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 13:07 b1\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 12:55 main\n\n# 브랜치 이동\n$ git switch b1\nSwitched to branch 'b1'\n$ git branch\n* b1\n  main\n\n# 브랜치 생성 및 이동\n$ git switch -c b2\nSwitched to a new branch 'b2'\n$ git branch\n  b1\n* b2\n  main\n\n# 참조  정보 확인  \n$ ls -al .git/refs/heads \ntotal 24\ndrwxr-xr-x@ 5 joelkim  staff  160 Aug  2 12:00 .\ndrwxr-xr-x@ 4 joelkim  staff  128 Jul 31 12:54 ..\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 13:07 b1\n-rw-r--r--@ 1 joelkim  staff   41 Aug  2 12:00 b2\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 12:55 main\n\n# 이름 변경\n$ git branch -m b3\n$ git branch \n  b1\n* b3\n  main\n\n# 참조 정보 확인\n(base) ➜  test_branch_01 git:(b3) ls -al .git/refs/heads\ntotal 24\ndrwxr-xr-x@ 5 joelkim  staff  160 Aug  2 12:00 .\ndrwxr-xr-x@ 4 joelkim  staff  128 Jul 31 12:54 ..\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 13:07 b1\n-rw-r--r--@ 1 joelkim  staff   41 Aug  2 12:00 b3\n-rw-r--r--@ 1 joelkim  staff   41 Jul 31 12:55 main",
+    "crumbs": [
+      "브랜치"
+    ]
+  },
+  {
+    "objectID": "command.html",
+    "href": "command.html",
+    "title": "git 명령",
+    "section": "",
+    "text": "git 명령은 크게 기본 명령과 고급 명령으로 나뉜다.\n\n기본 명령 (porcelain command) 70여개\n고급 명령 (plumbing command) 60여개",
+    "crumbs": [
+      "git 명령"
+    ]
+  },
+  {
+    "objectID": "command.html#기본-명령",
+    "href": "command.html#기본-명령",
+    "title": "git 명령",
+    "section": "기본 명령",
+    "text": "기본 명령\n\ngit init: 새 저장소를 초기화\ngit clone: 원격 저장소를 복제\ngit add: 변경된 파일을 staging area에 추가\ngit commit: staging된 변경사항을 저장\ngit status: 현재 작업 디렉토리 상태 조회\ngit diff: 변경된 내용 비교\ngit branch: 브랜치 생성/조회\ngit checkout: 브랜치 변경 또는 커밋 탐색\ngit switch: 브랜치 변경\ngit merge: 브랜치 병합\ngit rebase: 커밋 히스토리 재정렬\ngit pull: 원격 저장소에서 변경사항 내려받고 병합\ngit push: 로컬 커밋을 원격 저장소에 업로드\ngit tag: 특정 커밋에 태그 지정\ngit stash: 임시로 변경사항 저장 후 복구 가능하게 보관\ngit cherry-pick: 다른 브랜치 커밋을 현재 브랜치에 적용\ngit bisect: 버그가 생긴 커밋을 찾기 위한 바이너리 검색\ngit blame: 파일 각 줄의 마지막 수정자 및 커밋 확인",
+    "crumbs": [
+      "git 명령"
+    ]
+  },
+  {
+    "objectID": "command.html#고급-명령",
+    "href": "command.html#고급-명령",
+    "title": "git 명령",
+    "section": "고급 명령",
+    "text": "고급 명령\n\ngit hash-object: 파일 내용을 Git 오브젝트(blob)로 해시 처리하고, -w 옵션으로 .git/objects 저장\ngit write-tree: 현재 인덱스(staging area)를 기준으로 tree 오브젝트 생성\ngit commit-tree: tree 오브젝트와 메시지를 기반으로 commit 아이템 수동 생성\ngit update-ref: 브랜치 또는 참조(ref)를 특정 커밋 SHA로 갱신\ngit symbolic-ref: HEAD와 같은 reference를 다른 ref로 연결\ngit cat-file: 객체 타입, 크기, 내용을 출력 (e.g. git cat-file -t, -p)\ngit ls-tree: 특정 tree 오브젝트의 디렉토리 항목 나열\ngit ls-files: 인덱스 상태를 저수준 포맷으로 출력 (-s 옵션 포함)\ngit rev-parse: 브랜치 이름, 태그 등 입력을 SHA‑1 해시로 변환\ngit write-tree: 현재 인덱스를 tree 오브젝트로 저장\ngit commit-tree: commit 오브젝트 생성\ngit update-ref: HEAD를 최신 커밋으로 업데이트",
+    "crumbs": [
+      "git 명령"
+    ]
+  },
+  {
+    "objectID": "cowork.html",
+    "href": "cowork.html",
+    "title": "공동 작업",
+    "section": "",
+    "text": "기준 브랜치를 여러 사람이 공동으로 사용하는 경우,\n개발자 A가 기준 브랜치에 작업 브랜치를 반영하는 시점에 이미 다른 사람인 B가 기준 브랜치에 먼저 반영한 내용이 있을 수 있다.\n이 때는 작업 내용에 따라 A가 기준 브랜치에 작업 브랜치를 반영하는 작업이 충돌할 수 있다.\n기준 브랜치에 작업 브랜치를 반영하기 전에 먼저 기준 브랜치를 작업 브랜치에 반영하는 작업을 하면\n\n\n\n\n설명\n\n기준 브랜치를 혼자서 사용하는 경우\n또는 공동으로 사용하지만 작업 빈도가 적어서 내가 모르는 사이에 기준 브랜치에 새 커밋이 올라오지 않는 경우\n\n작업\n\n기준 브랜치에서 b 브랜치 생성\nb 브랜치에 c1 커밋 추가\n기준 브랜치에서 b1 브랜치 머지\n\n\n$ git init test_merge_1\nInitialized empty Git repository in test_merge_1/.git/\n$ cd test_merge_1 \n\n$ echo \"line 1\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c0\n[main (root-commit) f36cdc2] c0\n 1 file changed, 1 insertion(+)\n create mode 100644 file1.txt\n\n$ git switch -c a\nSwitched to a new branch 'a'\n\n$ echo \"line 2\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c1\n[a 68971af] c1\n 1 file changed, 1 insertion(+)\n\n$ git switch main\nSwitched to branch 'main'\n$ git merge a -m \"merge a\"\nUpdating f36cdc2..68971af\nFast-forward (no commit created; -m option ignored)\n file1.txt | 1 +\n 1 file changed, 1 insertion(+)\n\n\n\n\n작업 순서\n\n기준 브랜치에서 b 브랜치 생성\nb 브랜치에 c1 커밋 추가 -&gt; 다른 사람이 먼저 머지\n기준 브랜치에 c2 커밋 추가\n기준 브랜치에서 b1 브랜치 머지 -&gt; 충돌\n\n만약 다른 사람이 기준 브랜치 머지를 하지 않으면 (2번이 없는 경우) 충돌이 발생하지 않음\n\n기준 브랜치에서 머지 취소 (merge --abort)\nb 브랜치에서 기준 브랜치 머지 -&gt; 충돌\n충돌 해결\n기준 브랜치에서 b1 브랜치 머지 -&gt; 성공\n\n\n\n\n\n\n설명\n\n레포를 공동으로 사용하는 경우\n기준 브랜치에 내가 모르는 사이에 커밋이 올라올 수 있다는 가정\n규칙: 작업 브랜치에 커밋하기 전에 항상 기준 브랜치를 백-머지(back-merge)해 주어야 함\n위 규칙을 지키면 충돌 가능성이 적어짐\n위 규칙을 지켜도 기준 브랜치에 머지 직전 다른 사람이 기준 브랜치에 커밋을 올릴 수도 있으므로 충돌 가능성은 존재\n공동 사용하는 사람이 적어서 기준 브랜치 머지 간격이 길면 충돌 가능성이 적어진다.\n\n작업 순서\n\n기준 브랜치에서 a 브랜치 생성\n기준 브랜치에 c2 커밋 추가 -&gt; 다른 사람이 먼저 머지\na 브랜치에서 기준 브랜치 머지\na 브랜치에 c1 커밋 추가\n기준 브랜치에서 b1 브랜치 머지\n\n\n\n\n\n\n설명\n\n레포를 공동으로 사용하는 경우\n작업 브랜치에 커밋하기 전에 백-머지(back-merge)를 했는데 그 이전에 다른 사람이 먼저 기준 브랜치에 커밋을 올린 경우\n백-머지시 충돌 발생\n충돌을 해결하고 커밋\n커밋 이후에 기준 브랜치에 머지\n이렇게 해도 백-머지와 기준 브랜치 머지 사이에 다른 사람이 먼저 먼저 기준 브랜치에 커밋을 올리면 충돌이 발생한다.\n많은 사람이 공동 사용해서 기준 브랜치 머지 간격이 아주 짧으면 충돌이 무한 반복될 수 있다.\n\n작업 순서\n\n기준 브랜치에서 b 브랜치 생성\n기준 브랜치에 c2 커밋 추가 -&gt; 다른 사람이 먼저 머지\nb 브랜치에 c1 커밋 추가\nb 브랜치에서 기준 브랜치 머지 -&gt; 충돌\n충돌 해결\n기준 브랜치에서 b1 브랜치 머지\n\n만약 5번과 6번 사이에 다른 사람이 기준 브랜치 머지하면 또 충돌 발생\n\n\n\n$ git init test_merge_4\nInitialized empty Git repository in test_merge_4/.git/\n$ cd test_merge_2\n\n$ echo \"line 1\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c0\n[main (root-commit) f36cdc2] c0\n 1 file changed, 1 insertion(+)\n create mode 100644 file1.txt\n\n$ git switch -c a\nSwitched to a new branch 'a'\n\n$ echo \"line 2\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c1\n[a fb6bd2c] c1\n 1 file changed, 1 insertion(+)\n\n$ git switch main\nSwitched to branch 'main'\n\n\n$ echo \"line 3\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c1\n[main 7d13172] c2\n 1 file changed, 1 insertion(+)\n\n$ git merge a -m \"merge a\"\nAuto-merging file1.txt\nCONFLICT (content): Merge conflict in file1.txt\nAutomatic merge failed; fix conflicts and then commit the result.\n\n$ git status\nOn branch main\nYou have unmerged paths.\n  (fix conflicts and run \"git commit\")\n  (use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n  (use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   file1.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\nline 1\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\nline 3\n=======\nline 2\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; a",
+    "crumbs": [
+      "공동 작업"
+    ]
+  },
+  {
+    "objectID": "cowork.html#기준-브랜치-반영-작업",
+    "href": "cowork.html#기준-브랜치-반영-작업",
+    "title": "공동 작업",
+    "section": "",
+    "text": "기준 브랜치를 여러 사람이 공동으로 사용하는 경우,\n개발자 A가 기준 브랜치에 작업 브랜치를 반영하는 시점에 이미 다른 사람인 B가 기준 브랜치에 먼저 반영한 내용이 있을 수 있다.\n이 때는 작업 내용에 따라 A가 기준 브랜치에 작업 브랜치를 반영하는 작업이 충돌할 수 있다.\n기준 브랜치에 작업 브랜치를 반영하기 전에 먼저 기준 브랜치를 작업 브랜치에 반영하는 작업을 하면\n\n\n\n\n설명\n\n기준 브랜치를 혼자서 사용하는 경우\n또는 공동으로 사용하지만 작업 빈도가 적어서 내가 모르는 사이에 기준 브랜치에 새 커밋이 올라오지 않는 경우\n\n작업\n\n기준 브랜치에서 b 브랜치 생성\nb 브랜치에 c1 커밋 추가\n기준 브랜치에서 b1 브랜치 머지\n\n\n$ git init test_merge_1\nInitialized empty Git repository in test_merge_1/.git/\n$ cd test_merge_1 \n\n$ echo \"line 1\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c0\n[main (root-commit) f36cdc2] c0\n 1 file changed, 1 insertion(+)\n create mode 100644 file1.txt\n\n$ git switch -c a\nSwitched to a new branch 'a'\n\n$ echo \"line 2\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c1\n[a 68971af] c1\n 1 file changed, 1 insertion(+)\n\n$ git switch main\nSwitched to branch 'main'\n$ git merge a -m \"merge a\"\nUpdating f36cdc2..68971af\nFast-forward (no commit created; -m option ignored)\n file1.txt | 1 +\n 1 file changed, 1 insertion(+)\n\n\n\n\n작업 순서\n\n기준 브랜치에서 b 브랜치 생성\nb 브랜치에 c1 커밋 추가 -&gt; 다른 사람이 먼저 머지\n기준 브랜치에 c2 커밋 추가\n기준 브랜치에서 b1 브랜치 머지 -&gt; 충돌\n\n만약 다른 사람이 기준 브랜치 머지를 하지 않으면 (2번이 없는 경우) 충돌이 발생하지 않음\n\n기준 브랜치에서 머지 취소 (merge --abort)\nb 브랜치에서 기준 브랜치 머지 -&gt; 충돌\n충돌 해결\n기준 브랜치에서 b1 브랜치 머지 -&gt; 성공\n\n\n\n\n\n\n설명\n\n레포를 공동으로 사용하는 경우\n기준 브랜치에 내가 모르는 사이에 커밋이 올라올 수 있다는 가정\n규칙: 작업 브랜치에 커밋하기 전에 항상 기준 브랜치를 백-머지(back-merge)해 주어야 함\n위 규칙을 지키면 충돌 가능성이 적어짐\n위 규칙을 지켜도 기준 브랜치에 머지 직전 다른 사람이 기준 브랜치에 커밋을 올릴 수도 있으므로 충돌 가능성은 존재\n공동 사용하는 사람이 적어서 기준 브랜치 머지 간격이 길면 충돌 가능성이 적어진다.\n\n작업 순서\n\n기준 브랜치에서 a 브랜치 생성\n기준 브랜치에 c2 커밋 추가 -&gt; 다른 사람이 먼저 머지\na 브랜치에서 기준 브랜치 머지\na 브랜치에 c1 커밋 추가\n기준 브랜치에서 b1 브랜치 머지\n\n\n\n\n\n\n설명\n\n레포를 공동으로 사용하는 경우\n작업 브랜치에 커밋하기 전에 백-머지(back-merge)를 했는데 그 이전에 다른 사람이 먼저 기준 브랜치에 커밋을 올린 경우\n백-머지시 충돌 발생\n충돌을 해결하고 커밋\n커밋 이후에 기준 브랜치에 머지\n이렇게 해도 백-머지와 기준 브랜치 머지 사이에 다른 사람이 먼저 먼저 기준 브랜치에 커밋을 올리면 충돌이 발생한다.\n많은 사람이 공동 사용해서 기준 브랜치 머지 간격이 아주 짧으면 충돌이 무한 반복될 수 있다.\n\n작업 순서\n\n기준 브랜치에서 b 브랜치 생성\n기준 브랜치에 c2 커밋 추가 -&gt; 다른 사람이 먼저 머지\nb 브랜치에 c1 커밋 추가\nb 브랜치에서 기준 브랜치 머지 -&gt; 충돌\n충돌 해결\n기준 브랜치에서 b1 브랜치 머지\n\n만약 5번과 6번 사이에 다른 사람이 기준 브랜치 머지하면 또 충돌 발생\n\n\n\n$ git init test_merge_4\nInitialized empty Git repository in test_merge_4/.git/\n$ cd test_merge_2\n\n$ echo \"line 1\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c0\n[main (root-commit) f36cdc2] c0\n 1 file changed, 1 insertion(+)\n create mode 100644 file1.txt\n\n$ git switch -c a\nSwitched to a new branch 'a'\n\n$ echo \"line 2\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c1\n[a fb6bd2c] c1\n 1 file changed, 1 insertion(+)\n\n$ git switch main\nSwitched to branch 'main'\n\n\n$ echo \"line 3\" &gt;&gt; file1.txt\n$ git add .\n$ git commit -m c1\n[main 7d13172] c2\n 1 file changed, 1 insertion(+)\n\n$ git merge a -m \"merge a\"\nAuto-merging file1.txt\nCONFLICT (content): Merge conflict in file1.txt\nAutomatic merge failed; fix conflicts and then commit the result.\n\n$ git status\nOn branch main\nYou have unmerged paths.\n  (fix conflicts and run \"git commit\")\n  (use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n  (use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   file1.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\nline 1\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\nline 3\n=======\nline 2\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; a",
+    "crumbs": [
+      "공동 작업"
+    ]
+  },
+  {
+    "objectID": "merge.html",
+    "href": "merge.html",
+    "title": "머지",
+    "section": "",
+    "text": "Building Git, Ch. 17 Basic Merging\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Coglan/2021%20-%20Coglan%20-%20Buliding%20Git.pdf",
+    "crumbs": [
+      "머지"
+    ]
+  },
+  {
+    "objectID": "merge.html#참고-문헌",
+    "href": "merge.html#참고-문헌",
+    "title": "머지",
+    "section": "",
+    "text": "Building Git, Ch. 17 Basic Merging\n\nchrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///Users/joelkim/Work/study/study_cs/book/DevOps/Coglan/2021%20-%20Coglan%20-%20Buliding%20Git.pdf",
+    "crumbs": [
+      "머지"
+    ]
+  },
+  {
+    "objectID": "merge.html#머지란",
+    "href": "merge.html#머지란",
+    "title": "머지",
+    "section": "머지란",
+    "text": "머지란",
+    "crumbs": [
+      "머지"
+    ]
+  },
+  {
+    "objectID": "repo.html",
+    "href": "repo.html",
+    "title": "레포지토리",
+    "section": "",
+    "text": "레포지토리 정보 등은 체크아웃 디렉렉토리 아래의 .git 디렉토리에 저장된다.",
+    "crumbs": [
+      "레포지토리"
+    ]
+  },
+  {
+    "objectID": "repo.html#레포지토리-생성",
+    "href": "repo.html#레포지토리-생성",
+    "title": "레포지토리",
+    "section": "",
+    "text": "레포지토리 정보 등은 체크아웃 디렉렉토리 아래의 .git 디렉토리에 저장된다.",
+    "crumbs": [
+      "레포지토리"
+    ]
+  },
+  {
+    "objectID": "repo.html#git-디렉토리의-구조",
+    "href": "repo.html#git-디렉토리의-구조",
+    "title": "레포지토리",
+    "section": ".git 디렉토리의 구조",
+    "text": ".git 디렉토리의 구조\n\n디렉토리\n\nobjects 디렉토리: 객체 정보 저장 디렉토리. 커밋 등 영구 정보를 저장\nrefs 디렉토리: 참조 정보 저장 디렉토리. 브랜치 등 임시 정보를 저장\nlogs 디렉토리:\ninfo 디렉토리:\nhooks 디렉토리: 훅 파일 저장\n\n파일\n\n텍스트 파일\n\nconfig 파일: 레포지토리 설정 파일\ndescription 파일: 레포지토리 설명 파일\nCOMMIT_EDITMSG 파일: 커밋 메세지 작성용 임시 파일\n\n바이너리 파일\n\nindex 파일: 스테이지 정보 저장\nHEAD 파일: 현재 체크아웃 위치 정보",
+    "crumbs": [
+      "레포지토리"
+    ]
+  },
+  {
+    "objectID": "repo.html#레포지토리-설정",
+    "href": "repo.html#레포지토리-설정",
+    "title": "레포지토리",
+    "section": "레포지토리 설정",
+    "text": "레포지토리 설정",
+    "crumbs": [
+      "레포지토리"
+    ]
+  }
+]
